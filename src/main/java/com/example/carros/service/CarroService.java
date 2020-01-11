@@ -32,9 +32,9 @@ public class CarroService {
 	public List<Carro> getCarrosFake() {
 		List<Carro> carros = new ArrayList<>();
 
-		carros.add(new Carro(1L, "Fusca"));
-		carros.add(new Carro(2L, "Brasilia"));
-		carros.add(new Carro(3L, "Chevette"));
+		carros.add(new Carro(1L, "Fusca","ford"));
+		carros.add(new Carro(2L, "Brasilia","wolks"));
+		carros.add(new Carro(3L, "Chevette" ,"chevrolet"));
 		
 		return carros;
 	}
