@@ -1,4 +1,4 @@
-package com.domain.carros;
+package com.example.carros.repository;
 
 import java.util.Optional;
 
