@@ -36,5 +36,10 @@ public class Carro {
 		this.id = id;
 		this.nome = nome;
 	}
+
+	public String getId() {
+		// TODO Auto-generated method stub
+		return null;
+	}
 	 	
 }
