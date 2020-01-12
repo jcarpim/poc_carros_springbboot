@@ -37,9 +37,13 @@ public class Carro {
 		this.nome = nome;
 	}
 
-	public String getId() {
+	public Long getId() {
 		// TODO Auto-generated method stub
-		return null;
+				return this.id;
 	}
-	 	
+
+	public Carro() {
+		super();
+	}
+	
 }
