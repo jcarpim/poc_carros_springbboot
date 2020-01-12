@@ -70,4 +70,11 @@ public class CarroService {
 			throw new RuntimeException("Não foi possível atualizar o regisro");
 		}
 	}
+
+	public void delete(Long id) {
+		Optional<Carro> carro = getCarroById(id);
+		if(carro.isPresent()) {
+			rep.deleteById(id);
+		}
+	}
 }
