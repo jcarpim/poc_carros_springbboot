@@ -45,5 +45,25 @@ public class Carro {
 	public Carro() {
 		super();
 	}
+
+	public Object getNome() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public Object getTipo() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public void setNome(Object nome2) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public void setTipo(Object tipo2) {
+		// TODO Auto-generated method stub
+		
+	}
 	
 }
