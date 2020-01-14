@@ -26,7 +26,7 @@ public class CarroService {
 		return rep.findById(id);
 	}
 	
-	public Optional<Carro> getCarroByTipo(String tipo) {
+	public List<Carro> getCarroByTipo(String tipo) {
 		return rep.findByTipo(tipo);
 	}
 	

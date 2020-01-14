@@ -1,9 +1,9 @@
 package com.example.carros.api;
 
+import java.util.List;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -56,9 +56,14 @@ public class CarrosController {
 		}*/
 	}
 	
+	@SuppressWarnings("rawtypes")
 	@GetMapping("/tipo/{tipo}")
-	public Optional<Carro> getCarrosByTipo(@PathVariable("tipo") String tipo) {
-		return service.getCarroByTipo(tipo);
+	public ResponseEntity getCarrosByTipo(@PathVariable("tipo") String tipo) {
+		List<Carro> carros = service.getCarroByTipo(tipo);
+		
+		return carros.isEmpty() ?
+				ResponseEntity.noContent().build() :
+				ResponseEntity.ok(carros);
 	}
 	
 	@PostMapping
