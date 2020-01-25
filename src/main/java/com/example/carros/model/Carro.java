@@ -61,7 +61,7 @@ public class Carro {
 		return null;
 	}
 
-	public Object getTipo() {
+	public Object getTipo() {      
 		// TODO Auto-generated method stub
 		return null;
 	}
